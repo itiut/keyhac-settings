@@ -1,6 +1,11 @@
-﻿from keyhac import *
+# coding: utf-8
+
+from keyhac import *
+from keyhacmacs import *
 
 def configure(keymap):
+
+    keyhacmacs.configure(keymap)
 
     # --------------------------------------------------------------------
     # config.py編集用のテキストエディタの設定
