@@ -9,7 +9,7 @@ def configure(keymap):
     editors = (
         "C:\Program Files\Sublime Text 2\sublime_text.exe",
         "notepad.exe",
-        )
+    )
 
     for e in editors:
         if os.path.exists(e):
@@ -23,4 +23,10 @@ def configure(keymap):
     keymap.setTheme("black")
 
     # keyhacmacs
-    keyhacmacs.configure(keymap)
+    keyhacmacs.configure(
+        keymap=keymap,
+        exe_names=[
+            "devenv.exe",
+            "sublime_text.exe",
+        ]
+    )
